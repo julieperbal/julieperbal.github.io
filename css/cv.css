@@ -159,6 +159,7 @@ h2
 	color: #ffffff;
 	font-weight:600;
 	font-size: 52px;
+	font-weight: inherit;
 	/*font-weight: bold;*/
 }
 
@@ -217,6 +218,7 @@ aside
 .bio h3
 {
 	padding-left: 4%;
+	font-weight: inherit;
 }
 .built
 {

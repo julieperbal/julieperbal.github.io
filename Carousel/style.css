@@ -82,10 +82,10 @@ abbr, acronym { border: 0; }
 
 .poster-main .poster-prev-btn {
   left: 0;
-  background: url(../img/left.png) no-repeat center center;
+  background: url(left.png) no-repeat center center;
 }
 
 .poster-main .poster-next-btn {
   right: 0;
-  background: url(../img/right.png) no-repeat center center;
+  background: url(right.png) no-repeat center center;
 }
