@@ -1,127 +1,1264 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Intégration 6</title>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
 
-  <link rel="stylesheet" href="integration6.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<!--~~~~~~~~ Inclusion page CSS et autres pages HTML ~~~~~~~~-->
+		<link rel="stylesheet" type="text/css" href="css/cv.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/stylefont.css"> -->
 
-</head>
+		<!--~~~~~~~~ Lien police ~~~~~~~~-->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700">
 
+		<!--~~~~~~~~ Lien polices Google ~~~~~~~~-->
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+
+		<!--~~~~~~~~ Lien logos Fontawesome ~~~~~~~~-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!--~~~~~~~~ Lien animation titre ~~~~~~~~-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+		<!--~~~~~~~~ Liens Fichiers Timeline ~~~~~~~~-->
+		<link rel="stylesheet" href="horizontal-timeline/css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="horizontal-timeline/css/style.css"> <!-- Resource style -->
+		<script src="horizontal-timeline/js/modernizr.js"></script> <!-- Modernizr -->
+
+		<!--~~~~~~~~ Liens carousel 3D ~~~~~~~~-->
+    <link rel="stylesheet" href="Carousel/demo/css/style.css">
+
+		<!--~~~~~~~~ Liens Timeline Verticale (dossier complet)~~~~~~~~-->
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="vertical-timeline/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="vertical-timeline/css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css' />
+
+		<!--~~~~~~~~ Liens Unicorn Button~~~~~~~~-->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css" />
+
+
+
+		<!--~~~~~~~~ Titre de ma page ~~~~~~~~-->
+		<title>CV Julie Perbal</title>
+	</head>
+
+<!--~~~~~~~~ Corps de mon CV ~~~~~~~~-->
 <body>
-  <div id="container-main">
+	<div class="container-main">
+		<!--~~~~~~~~ Navbar ~~~~~~~~-->
+		<div class="navbar">
+				<ul>
+						<li><a href="CV.html" class="autofocus">Home</a></li>
+						<li><a href="#bio" class="autofocus">Bio</a></li>
+						<li><a href="#parcours" class="modal1">Parcours</a></li>
+						<li><a href="#competences" class="modal2">Competences</a></li>
+						<li><a href="#book" class="autofocus">Portfolio</a></li>
+						<li><a href="#upto" class="autofocus">UPTO by Simplon</a></li>
+						<li><a href="" id="open" class="autofocus">Contact</a></li>
+				</ul>
+		</div>
 
-      <div class="navbar">
+	<header>
+			<!--~~~~~~~~ jumbotron ~~~~~~~~-->
+			<div class="jumbotron">
+				<div class="index">
+					<h1 class="animated fadeInUp">Julie PERBAL</h1>
+					<h4>Apprenante Developpeuse Web<br>UPTO by Simplon</h4>
+				</div>
+			</div>
 
-        <div class="title">
-          <img class="one" src="images/pic02.jpg" alt="">
-          <h1>Privy</h1>
-          <p>DESIGN BY <span>TEMPLATED</span></p>
-        </div>
-
-        <div class="nav">
-          <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Homepage</a></li>
-            <li><a href="#">our clients</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">careers</a></li>
-            <li><a href="#">contact us</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="workplace">
-        <div> <img class="two" src="images/pic01.jpg" alt=""></div>
-
-        <div class="text">
-          <h1>Nullam faucibus mi quis velit</h1>
-          <h3>Morbi leo mi, nonummy eget, tristique non</h3>
-          <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
-        </div>
+	</header>
 
 
-        <div class="calendrier">
-          <h1>fusce ultrices fringilla metus</h1>
-          <h3>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue</h3>
+		<!--~~~~~~~~ Contenant détails CV ~~~~~~~~-->
+		<!-- <div class="conteneur"> -->
 
-          <div class="training">
-            <div class="date">
-              <p>jan</p>
-              <h1>05</h1>
-            </div>
-            <div class="lorem">
-              <h2><a href="">No man, I don't eat pork</a></h2>
-              <p>My money's in that office, right? If she start giving me some bullshit about it ain't there. You understand?</p>
-            </div>
-          </div>
+			<!--~~~~~~~~ Bio ~~~~~~~~-->
+			<hr>
+			<h2 id="bio">A PROPOS DE MOI...</h2>
+			<div class="bio">
+				<div class="ligne">
+					<div class="photo"><a href="exercices/Julie.jpg"><img src="exercices/julie-mini.jpg" alt="Ma photo"/></a></div>
 
-          <div class="training">
-            <div class="date">
-              <p>jan</p>
-              <h1>03</h1>
-            </div>
-            <div class="lorem">
-              <h2><a href="">No man, I don't eat pork</a></h2>
-              <p>My money's in that office, right? If she start giving me some bullshit about it ain't there. You understand?</p>
-            </div>
-          </div>
+						<!-- <p>Je n'etais pas destinee a faire de longues etudes... mais voila, tout ce que j'apprenais me donner envie de continuer, d'en apprendre davantage. J'ai donc valide un Master en Communication, mais la realite de ce secteur professionnel ainsi le peu d'offres d'emploi eurent raison de ma perseverance a trouver du travail dans cette branche.<br>Apres avoir travaille dans des call-centers ainsi que dans le commerce, il me semblait evident de me recentrer sur un metier qui correspond a mon dynamisme. <br>C'est a ce moment la qu'UpTo entre en jeu! J'avais entendu parler de la promo#1 et je me suis dis <strong>"Ca, c'est popur moi!"</strong> Et debut septembre, SURPRISE, on m'annonce que je fais partie de la promo#2!!!! <br>Ma motivation est au plus haut, et je m'eclate a apprendre le code!</p> -->
+						<h3>Je suis en train de faconner ma nouvelle vie professionnelle.
+						<br>En faisant de la veille, je suis arrivee sur le site d'UPTO. Cela faisait un moment que je m'interessais a l'informatique et au developepment mais je ne m'etais jamais reellement pose la question d'une possible reconversion.<br>
+						Aujourd'hui, de nouvelles competences de Developpeuse Web viennent completer d'autres acquises dans differents postes.</h3>
+					</div>
+				<!-- <h3 class="built">Site en construction</h3> -->
+			</div>
 
-          <div class="training">
-            <div class="date">
-              <p>jan</p>
-              <h1>01</h1>
-            </div>
-            <div class="lorem">
-              <h2><a href="">No man, I don't eat pork</a></h2>
-              <p>My money's in that office, right? If she start giving me some bullshit about it ain't there. You understand?</p>
-            </div>
-          </div>
-
-          <div class="training">
-            <div class="date">
-              <p>dec</p>
-              <h1>31</h1>
-            </div>
-            <div class="lorem">
-              <h2><a href="">No man, I don't eat pork</a></h2>
-              <p>My money's in that office, right? If she start giving me some bullshit about it ain't there. You understand?</p>
-            </div>
-          </div>
-      </div>
+		</div>
+		<!-- </div> -->
 
 
-        <div class="copyright">
-          <p>untitled. all rights reserved. | photos by <span>fotograph</span></p>
-          <p>design by <span>templated</span></p>
-        </div>
+			<!--~~~~~~~~ Timeline Verticale~~~~~~~~-->
+			<!--~~~~~~~~ Lien CSS Timeline Verticale ~~~~~~~~-->
+	<div id="timeline">
+			<h2 id="parcours" class="ss-subtitle">PARCOURS</h2>
+
+			<!-- <div id="ss-links" class="ss-links">
+				<a href="#november">Nov</a>
+				<a href="#october">Oct</a>
+				<a href="#september">Sep</a>
+				<a href="#august">Aug</a>
+				<a href="#july">Jul</a>
+				<a href="#june">Jun</a>
+			</div> -->
+			<div id="ss-container" class="ss-container">
+					<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="juin">2007</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2009</h2>
+							</div>
+					</div>
+					<div class="ss-row ss-medium">
+							<div class="ss-left">
+								<h3>
+										<span>Dijon (21), Septembre 2007 - Août 2009</span>
+										<a href="">ASSISTANTE MANAGER (BTS en alternance)
+											<br> <img class="logos-experience-sncf" src="images/sncf.gif" alt=""></a>
+										<p></p>
+								</h3>
+								<!-- <img class="ss-circle ss-circle-1" src="http://tympanus.net/Tutorials/TypographyEffects/" alt=""> -->
+									<!-- <a href="http://tympanus.net/Tutorials/TypographyEffects/" class="ss-circle ss-circle-1">Typography Effects with CSS3 and jQuery</a> -->
+							</div>
+							<div class="ss-right">
+								<img class="ss-circle ss-circle-1" src="http://tympanus.net/Tutorials/TypographyEffects/" alt="">
+									<!-- <h3>
+											<span>Septembre 2007 - Août 2009</span>
+											<a href="">ASSISTANTE MANAGER (BTS en alternance), SNCF, Dijon (21)</a>
+											<p></p>
+									</h3> -->
+							</div>
+
+		<!-- <div class="ss-row ss-large">
+							<div class="ss-left">
+									<h3>
+											<span>November 22, 2011</span>
+											<a href="http://tympanus.net/Development/HoverClickTriggerCircle/">Hover and Click Trigger for Circular Elements with jQuery</a>
+									</h3>
+							</div>
+		<div class="ss-right">
+									<a href="http://tympanus.net/Development/HoverClickTriggerCircle/" class="ss-circle ss-circle-2">Hover and Click Trigger for Circular Elements with jQuery</a>
+							</div>
+					</div>
+					<div class="ss-row ss-small">
+							<div class="ss-left">
+			<a href="http://tympanus.net/Tutorials/ElasticSlideshow/" class="ss-circle ss-circle-3">Elastic Image Slideshow with Thumbnail Preview</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>November 21, 2011</span>
+											<a href="http://tympanus.net/Tutorials/ElasticSlideshow/">Elastic Image Slideshow with Thumbnail Preview</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<h3>
+											<span>November 18, 2011</span>
+											<a href="http://tympanus.net/Development/FullscreenImageBlurEffect/">Fullscreen Image Blur Effect with HTML5</a>
+									</h3>
+							</div>
+		<div class="ss-right">
+									<a href="http://tympanus.net/Development/FullscreenImageBlurEffect/" class="ss-circle ss-circle-4">Fullscreen Image Blur Effect with HTML5</a>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/InteractiveTypographyEffects/" class="ss-circle ss-circle-5">Interactive Typography Effects with HTML5</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>November 9, 2011</span>
+											<a href="http://tympanus.net/Tutorials/InteractiveTypographyEffects/">Interactive Typography Effects with HTML5</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-small">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/AnimatedButtons/" class="ss-circle ss-circle-6">Animated Buttons with CSS3</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>November 7, 2011</span>
+											<a href="http://tympanus.net/Tutorials/AnimatedButtons/">Animated Buttons with CSS3</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<h3>
+											<span>November 2, 2011</span>
+											<a href="http://tympanus.net/Tutorials/OriginalHoverEffects/">Original Hover Effects with CSS3</a>
+									</h3>
+							</div>
+		<div class="ss-right">
+									<a href="http://tympanus.net/Tutorials/OriginalHoverEffects/" class="ss-circle ss-circle-7">Original Hover Effects with CSS3</a>
+							</div>
+					</div> -->
+		</div>
+		<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="october">Juin</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2009</h2>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+								<img class="ss-circle ss-circle-8" src="http://tympanus.net/Development/FullscreenImage3DEffect/" alt="">
+									<!-- <h3>
+											<span>Septembre 2007 - Juin 2009</span>
+											<a href="">BTS MANAGEMENT DES UNITES COMMERCIALES</a>
+											<p></p>
+									</h3> -->
+							</div>
+							<div class="ss-right">
+								<h3>
+										<span>Septembre 2007 - Juin 2009, Dijon (21)</span>
+										<a href="">BTS MANAGEMENT DES UNITES COMMERCIALES
+											<br><img class="logos-experience" src="images/Dijon.jpg" alt=""></a>
+										<p></p>
+								</h3>
+								<!-- <img class="ss-circle ss-circle-8" src="http://tympanus.net/Development/FullscreenImage3DEffect/" alt=""> -->
+			<!-- <a href="http://tympanus.net/Development/FullscreenImage3DEffect/" class="ss-circle ss-circle-8">Fullscreen Image 3D Effect with CSS3 and jQuery</a> -->
+							</div>
+					</div>
+		<!-- <div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/" class="ss-circle ss-circle-9">Creative CSS3 Animation Menus</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>October 24, 2011</span>
+											<a href="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/">Creative CSS3 Animation Menus</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/BlurMenu/" class="ss-circle ss-circle-10">Blur Menu with CSS3 Transitions</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>October 19, 2011</span>
+											<a href="http://tympanus.net/Tutorials/BlurMenu/">Blur Menu with CSS3 Transitions</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<h3>
+											<span>October 17, 2011</span>
+											<a href="http://tympanus.net/Development/WaveDisplayEffect/">Wave Display Effect with jQuery</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Development/WaveDisplayEffect/" class="ss-circle ss-circle-11">Wave Display Effect with jQuery</a>
+							</div>
+					</div>
+		<div class="ss-row ss-small">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/FlexibleSlideToTopAccordion/" class="ss-circle ss-circle-12">Flexible Slide-to-top Accordion</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>October 12, 2011</span>
+											<a href="http://tympanus.net/Tutorials/FlexibleSlideToTopAccordion/">Flexible Slide-to-top Accordion</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<h3>
+											<span>October 10, 2011</span>
+											<a href="http://tympanus.net/Tutorials/CircleNavigationEffect/">Circle Navigation Effect with CSS3</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Tutorials/CircleNavigationEffect/" class="ss-circle ss-circle-13">Circle Navigation Effect with CSS3</a>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/DraggableImageBoxesGrid/" class="ss-circle ss-circle-14">Draggable Image Boxes Grid</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>October 7, 2011</span>
+											<a href="http://tympanus.net/Tutorials/DraggableImageBoxesGrid/">Draggable Image Boxes Grid</a>
+									</h3>
+							</div>
+					</div> -->
+		<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="september">Juin</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2011</h2>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<h3>
+											<span>Sophia-Antipolis (06), Septembre 2009 - Juin 2011</span>
+											<a href="http://www.ecoles-idrac.com/">MASTER 1 COMMUNICATION ET PUBLICITE</a>
+											<p><img class="logos-experience-idrac" src="images/idrac.jpg" alt=""></p>
+									</h3>
+							</div>
+							<div class="ss-right">
+								<img class="ss-circle ss-circle-15" src="http://tympanus.net/Tutorials/ScrollbarVisibility/" alt="">
+			<!-- <a href="http://tympanus.net/Tutorials/ScrollbarVisibility/" class="ss-circle ss-circle-15">Scrollbar Visibility with jScrollPane</a> -->
+							</div>
+					</div>
+		<!-- <div class="ss-row ss-medium">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Development/MultiLevelPhotoMap/" class="ss-circle ss-circle-16">Multi-level Photo Map</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>September 27, 2011</span>
+											<a href="http://tympanus.net/Development/MultiLevelPhotoMap/">Multi-level Photo Map</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/ResponsiveImageGallery/" class="ss-circle ss-circle-17">Responsive Image Gallery with Thumbnail Carousel</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>September 20, 2011</span>
+											<a href="http://tympanus.net/Tutorials/ResponsiveImageGallery/">Responsive Image Gallery with Thumbnail Carousel</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-small">
+							<div class="ss-left">
+			<h3>
+											<span>September 12, 2011</span>
+											<a href="http://tympanus.net/Development/Elastislide/">Elastislide - A Responsive jQuery Carousel Plugin</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Development/Elastislide/" class="ss-circle ss-circle-18">Elastislide - A Responsive jQuery Carousel Plugin</a>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Development/Slicebox/" class="ss-circle ss-circle-19">Slicebox - A fresh 3D image slider with graceful fallback </a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>September 5, 2011</span>
+											<a href="http://tympanus.net/Development/Slicebox/">Slicebox - A fresh 3D image slider with graceful fallback </a>
+									</h3>
+							</div>
+					</div> -->
+		<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="august">2011</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2013</h2>
+							</div>
+					</div>
+		<!-- <div class="ss-row ss-large">
+							<div class="ss-left">
+			<h3>
+											<span>Juin 2009</span>
+											<a href="http://tympanus.net/Development/AutomaticImageMontage/">Automatic Image Montage with jQuery</a>
+											<p>BTS Management des Unités Commerciales, Dijon-Formation, Dijon ()</p>
+									</h3>
+							</div>
+						</div>
+							<div class="ss-right">
+								<img class="ss-circle ss-circle-20" src="http://tympanus.net/Development/AutomaticImageMontage/" alt="">
+			<a href="http://tympanus.net/Development/AutomaticImageMontage/" class="ss-circle ss-circle-20">Automatic Image Montage with jQuery</a>
+							</div>
+					</div> -->
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+								<img class="ss-circle ss-circle-21" src="http://tympanus.net/Development/ImageZoomTour/" alt="">
+									<!-- <a href="http://tympanus.net/Development/ImageZoomTour/" class="ss-circle ss-circle-21">Image Zoom Tour with jQuery</a> -->
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>Juillet 2011 - Décembre 2013, Nice (06)</span>
+											<a href="">CHARGEE DE COMMUNICATION - RESPONSABLE SERVICE CLIENTS</a>
+											<p><ul>
+												<li>Gestion de la communication externe (développement de l'image sur le web et les réseaux sociaux)</li>
+												<li>Exécution de la communication interne (notes de service, comptes-rendus, organisation de réunions et d'évènements)</li>
+												<li>Recutement, formation et encadrement d'une équipe (7 collaborateurs)</li>
+												<li>Gestion de la stratégie relation client (phoning, renseignements, gestion de conflits)</li>
+												<li>Gestion de l'administratif (DUE, plannings, courriers, préparation du cahier des charges de réunions)</li>
+											</ul></p>
+									</h3>
+							</div>
+					</div>
+	<!--	<div class="ss-row ss-small">
+							<div class="ss-left">
+			<h3>
+											<span>August 16, 2011</span>
+											<a href="http://tympanus.net/Development/CircularContentCarousel/">Circular Content Carousel with jQuery</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Development/CircularContentCarousel/" class="ss-circle ss-circle-22">Circular Content Carousel with jQuery</a>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/PortfolioImageNavigation/" class="ss-circle ss-circle-23">Portfolio Image Navigation with jQuery</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>August 9, 2011</span>
+											<a href="http://tympanus.net/Tutorials/PortfolioImageNavigation/">Portfolio Image Navigation with jQuery</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+			<h3>
+											<span>August 4, 2011</span>
+											<a href="http://tympanus.net/Development/FullscreenGridPortfolioTemplate/">Expanding Fullscreen Grid Portfolio</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Development/FullscreenGridPortfolioTemplate/" class="ss-circle ss-circle-24">Expanding Fullscreen Grid Portfolio</a>
+							</div>
+					</div> -->
+		<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="july">2014</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2015</h2>
+							</div>
+					</div>
+		<!-- <div class="ss-row ss-small">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Development/ContentRotator/example1.html" class="ss-circle ss-circle-25">Content Rotator with jQuery</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>Septembre 2009 - Juin 2011</span>
+											<a href="http://tympanus.net/Development/ContentRotator/example1.html">Content Rotator with jQuery</a>
+											<p>Master Communication et Publicité, IDRAC Sophia Antipolis (06)</p>
+									</h3>
+							</div>
+					</div> -->
+		<div class="ss-row ss-medium">
+							<div class="ss-left">
+			<h3>
+											<span>Saint-Jean de Vedas (34), Janvier 2014 - Septembre 2015</span>
+											<a href="http://www.maisonsdumonde.com/">CONSEILLERE DE VENTE POLYVALENTE
+												<br> <img class="logos-experience" src="images/Maisons-du-Monde.jpg" alt=""></a>
+											<p><ul>
+												<li>Gestion de la relation client (Stratégie de vente, Renseignements et fidélisation de la clientèle)</li>
+												<li>Exécution des objectifs de vente (réalisation de tableaux Excel de suivis)</li>
+												<li>Gestion de toute l'organisation évènementielle du rayon Noël (podiums, suivis du Book Pilote et des règles de Merchandising)</li>
+											</ul></p>
+									</h3>
+							</div>
+							<div class="ss-right">
+								<img class="ss-circle ss-circle-26" src="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html" alt="">
+			<!-- <a href="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html" class="ss-circle ss-circle-26">Vertical Sliding Accordion with jQuery</a> -->
+							</div>
+					</div>
+	<!--	<div class="ss-row ss-medium">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html" class="ss-circle ss-circle-27">Animated Text and Icon Menu with jQuery</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>July 12, 2011</span>
+											<a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html">Animated Text and Icon Menu with jQuery</a>
+									</h3>
+							</div>
+					</div>
+		<div class="ss-row ss-small">
+							<div class="ss-left">
+			<h3>
+											<span>July 5, 2011</span>
+											<a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/" class="ss-circle ss-circle-30">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+							</div>
+					</div>
+		<div class="ss-row ss-large">
+							<div class="ss-left">
+									<a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html" class="ss-circle ss-circle-28">Sliding Background Image Menu with jQuery</a>
+							</div>
+							<div class="ss-right">
+									<h3>
+											<span>July 3, 2011</span>
+											<a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html">Sliding Background Image Menu with jQuery</a>
+									</h3>
+							</div>
+					</div> -->
+		<div class="ss-row">
+							<div class="ss-left">
+									<h2 id="june">2015</h2>
+							</div>
+							<div class="ss-right">
+									<h2>2016</h2>
+							</div>
+					</div>
+
+					<div class="ss-row ss-medium">
+										<div class="ss-left">
+											<img class="ss-circle ss-circle-22" src="http://tympanus.net/Development/ImageZoomTour/" alt="">
+												<!-- <a href="http://tympanus.net/Development/ImageZoomTour/" class="ss-circle ss-circle-21">Image Zoom Tour with jQuery</a> -->
+										</div>
+										<div class="ss-right">
+												<h3>
+														<span>Septembre 2015 - Juin 2016, Montpellier (34)</span>
+														<a href="http://www.espe-lr.fr/">FORMATION PROFESSEUR DES ECOLES
+														<br><img class="logos-experience" src="images/index.jpeg" alt=""><img class="logos-experience" src="images/logo_um.png" alt=""></a>
+														<p></p>
+												</h3>
+										</div>
+								</div>
+		<!-- <div class="ss-row ss-small">
+							<div class="ss-left">
+								 <h3>
+											<span>Juillet 2011 - Décembre 2013</span>
+											<a href="http://tympanus.net/Development/GridNavigationEffects/example5.html">Grid Navigation Effects with jQuery</a>
+									</h3>
+							</div>
+							<div class="ss-right">
+			<a href="http://tympanus.net/Development/GridNavigationEffects/example5.html" class="ss-circle ss-circle-29">Grid Navigation Effects with jQuery</a>
+							</div> -->
+
+							<div class="ss-row">
+									<div class="ss-left">
+											<h2 id="april">2016</h2>
+									</div>
+									<div class="ss-right">
+											<h2>2017</h2>
+									</div>
+							</div>
+							<div class="ss-row ss-medium">
+												<div class="ss-left">
+													<h3>
+															<span>Montpellier (34), Depuis septembre 2016</span>
+															<a href="http://upto-numerique.fr/">APPRENANTE DEVELOPPEUSE WEB
+																<br><img class="logos-experience" src="images/uptonumerique.gif" alt=""> by </a><a href="http://simplon.co/"><img class="logos-experience" src="images/simplon.png" alt=""></a>
+															<p><ul>
+																<li>HTML5 - CSS3 - Bootstrap</li>
+																<li>Javascript - JQuery</li>
+																<li>Angular</li>
+																<li>PHP - SQL+</li>
+																<li>Symfony+</li>
+																<li>GiyHub</li>
+															</ul></p>
+													</h3>
+													<!-- <img class="ss-circle ss-circle-27" src="http://tympanus.net/Development/ImageZoomTour/" alt=""> -->
+														<!-- <a href="http://tympanus.net/Development/ImageZoomTour/" class="ss-circle ss-circle-21">Image Zoom Tour with jQuery</a> -->
+												</div>
+												<div class="ss-right">
+													<img class="ss-circle ss-circle-27" src="http://tympanus.net/Development/ImageZoomTour/" alt="">
+														<!-- <h3>
+																<span>Depuis septembre 2016</span>
+																<a href="http://upto-numerique.fr/">APPRENANTE DEVELOPPEUSE WEB<br>UpTo by Simplon (34)</a>
+																<p><ul>
+																	<li>HTML5 - CSS3 - Bootstrap</li>
+																	<li>Javascript - JQuery</li>
+																	<li>Angular</li>
+																	<li>PHP - SQL+</li>
+																	<li>Symfony+</li>
+																	<li>GiyHub</li>
+																</ul></p>
+														</h3> -->
+												</div>
+										</div>
+
+									</div>
+							</div>
+						</div>
+
+							<!-- <div class="ss-row">
+												<div class="ss-left">
+														<h2 id="may">2014</h2>
+												</div>
+												<div class="ss-right">
+														<h2>2015</h2>
+												</div>
+										</div>
+										<div class="ss-row ss-medium">
+															<div class="ss-left">
+																 <h3>
+																			<span>Janvier 2014 - Septembre 2015</span> -->
+																			<!-- <img src="http://tympanus.net/Development/GridNavigationEffects/example5.html" alt=""> -->
+																			<!-- <a href="">CONSEILLERE DE VENTE POLYVALENTE</a>
+																			<p>Maison Du Monde, Saint-Jean-de-Vedas (34)</p>
+																	</h3>
+															</div>
+															<div class="ss-right">
+																<img class="ss-circle ss-circle-29" src="http://tympanus.net/Development/GridNavigationEffects/example5.html" alt=""> -->
+											<!-- <a href="http://tympanus.net/Development/GridNavigationEffects/example5.html" class="ss-circle ss-circle-29">Grid Navigation Effects with jQuery</a> -->
+															<!-- </div> -->
+															<!-- <div class="ss-row ss-small">
+																				<div class="ss-left">
+																					 <h3>
+																								<span>Juillet 2011 - Décembre 2013</span>
+																								<a href="http://tympanus.net/Development/GridNavigationEffects/example5.html">Grid Navigation Effects with jQuery</a>
+																						</h3>
+																				</div>
+																				<div class="ss-right">
+																<a href="http://tympanus.net/Development/GridNavigationEffects/example5.html" class="ss-circle ss-circle-29">Grid Navigation Effects with jQuery</a>
+																				</div> -->
+
+
+									<!-- <div class="ss-row">
+											<div class="ss-left">
+													<h2 id="april">2015</h2>
+											</div>
+											<div class="ss-right">
+													<h2>2016</h2>
+											</div>
+									</div>
+									<div class="ss-row ss-medium">
+														<div class="ss-left"> -->
+															<!-- <img class="ss-circle ss-circle-27" src="http://tympanus.net/Development/ImageZoomTour/" alt=""> -->
+																<!-- <a href="http://tympanus.net/Development/ImageZoomTour/" class="ss-circle ss-circle-21">Image Zoom Tour with jQuery</a> -->
+														<!-- </div>
+														<div class="ss-right">
+																<h3>
+																		<span>Septembre 2015 - Juin 2016</span>
+																		<a href="">Formation Professeur des Ecoles</a>
+																		<p>Université Montpellier 2 (34)</p>
+																</h3>
+														</div>
+												</div> -->
+
+
+												<!-- <div class="ss-row">
+																	<div class="ss-left">
+																			<h2 id="March">2016</h2>
+																	</div>
+																	<div class="ss-right">
+																			<h2>2017</h2>
+																	</div>
+															</div> -->
+												<!-- <div class="ss-row ss-small">
+																	<div class="ss-left">
+																			<a href="http://tympanus.net/Development/ContentRotator/example1.html" class="ss-circle ss-circle-25">Content Rotator with jQuery</a>
+																	</div>
+																	<div class="ss-right">
+																			<h3>
+																					<span>Septembre 2009 - Juin 2011</span>
+																					<a href="http://tympanus.net/Development/ContentRotator/example1.html">Content Rotator with jQuery</a>
+																					<p>Master Communication et Publicité, IDRAC Sophia Antipolis (06)</p>
+																			</h3>
+																	</div>
+															</div> -->
+												<!-- <div class="ss-row ss-medium">
+																	<div class="ss-left">
+													<h3>
+																					<span>Depuis Septembre 2016</span>
+																					<a href="">Apprenante Développeuse Web</a>
+																					<p>UPTO by Simplon, Grande Ecole du Numérique (34)</p>
+																			</h3>
+																	</div>
+																	<div class="ss-right">
+																		<img class="ss-circle ss-circle-26" src="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html" alt=""> -->
+													<!-- <a href="http://tympanus.net/Development/VerticalSlidingAccordion/example1.html" class="ss-circle ss-circle-26">Vertical Sliding Accordion with jQuery</a> -->
+																	<!-- </div>
+															</div> -->
+											<!--	<div class="ss-row ss-medium">
+																	<div class="ss-left">
+																			<a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html" class="ss-circle ss-circle-27">Animated Text and Icon Menu with jQuery</a>
+																	</div>
+																	<div class="ss-right">
+																			<h3>
+																					<span>July 12, 2011</span>
+																					<a href="http://tympanus.net/Tutorials/AnimatedTextIconMenu/example1.html">Animated Text and Icon Menu with jQuery</a>
+																			</h3>
+																	</div>
+															</div>
+												<div class="ss-row ss-small">
+																	<div class="ss-left">
+													<h3>
+																					<span>July 5, 2011</span>
+																					<a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+																			</h3>
+																	</div>
+																	<div class="ss-right">
+													<a href="http://tympanus.net/Tutorials/FullscreenSlideshowAudio/" class="ss-circle ss-circle-30">Fullscreen Slideshow with HTML5 Audio and jQuery</a>
+																	</div>
+															</div>
+												<div class="ss-row ss-large">
+																	<div class="ss-left">
+																			<a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html" class="ss-circle ss-circle-28">Sliding Background Image Menu with jQuery</a>
+																	</div>
+																	<div class="ss-right">
+																			<h3>
+																					<span>July 3, 2011</span>
+																					<a href="http://tympanus.net/Development/SlidingBackgroundImageMenu/example5.html">Sliding Background Image Menu with jQuery</a>
+																			</h3>
+																	</div>
+															</div> -->
+
+
+
+		<!--~~~~~~~~ Timeline Horizontale~~~~~~~~-->
+			<!-- <section class="cd-horizontal-timeline">
+				<div class="timeline">
+					<div class="events-wrapper">
+						<div class="events">
+							<ol>
+								<li><a href="#0" data-date="16/01/2014" class="selected">1987</a></li>
+								<li><a href="#0" data-date="28/02/2014">2007</a></li>
+								<li><a href="#0" data-date="20/04/2014">2007<br>2009</a></li>
+								<li><a href="#0" data-date="20/05/2014">2009</a></li>
+								<li><a href="#0" data-date="09/07/2014">2009<br>2010</a></li>
+								<li><a href="#0" data-date="30/08/2014">2010<br>2011</a></li>
+								<li><a href="#0" data-date="15/09/2014">2011</a></li>
+								<li><a href="#0" data-date="01/11/2014">2011<br>2013</a></li>
+								<li><a href="#0" data-date="10/12/2014">2014<br>2015</a></li>
+								<li><a href="#0" data-date="19/01/2015">2015<br>2016</a></li>
+								<li><a href="#0" data-date="03/03/2015">2016<br>2017</a></li>
+							</ol>
+
+							<span class="filling-line" aria-hidden="true" class="transform: scaleX(0,095)"></span> -->
+						<!-- </div> <! .events -->
+					<!-- </div> <! .events-wrapper -->
+
+					<!-- <ul class="cd-timeline-navigation">
+						<li><a href="#0" class="prev inactive">Prev</a></li>
+						<li><a href="#0" class="next">Next</a></li> -->
+					<!-- </ul> <! .cd-timeline-navigation -->
+				<!-- </div> <! .timeline -->
+
+				<!-- <div class="events-content">
+					<ol>
+						<li class="selected" data-date="16/01/2014">
+							<h3><img src="icons/sparrow.png" alt=""></h3>
+							<em>13 Juin 1987</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="28/02/2014">
+							<h3><img src="icons/graduation-hat.png" alt=""></h3>
+							<h3>Baccalauréat STG</h3>
+							<em>Juin 2007</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="20/04/2014">
+							<h3><img src="icons/briefcase.png" alt=""></h3>
+							<h3>Assistante Manager</h3>
+							<em>Septembre 2007 - Août 2009</em>
+							<p>
+								Assistante Manager en alternance à SNCF Dijon.
+							</p>
+						</li>
+
+						<li data-date="20/05/2014">
+							<h3><img src="icons/graduation-hat.png" alt=""></h3>
+							<h3>BTS Management des Unités Commerciales</h3>
+							<em>Juin 2009</em>
+							<p>
+								BTS Management des Unités Commerciales.
+							</p>
+						</li>
+
+						<li data-date="09/07/2014">
+							<h3><img src="icons/briefcase.png" alt=""></h3>
+							<h3>Chargée d'accueil et d'informations</h3>
+							<em>Septembre 2009 - Août 2010</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="30/08/2014">
+							<h3><img src="icons/briefcase.png" alt=""></h3>
+							<h3>Assistante de Communication - Assistante Chef d'Opération</h3>
+							<em>Septembre 2010 - Juin 2011</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="15/09/2014">
+							<h3><img src="icons/graduation-hat.png" alt=""></h3>
+							<h3>Master Communication et Publicité</h3>
+							<em>Juin 2011</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="01/11/2014">
+							<h3><img src="icons/briefcase.png" alt=""></h3>
+							<h3>Chargée de Communication - Responsable Service Client</h3>
+							<em>Juillet 2011 - Décembre 2013</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="10/12/2014">
+							<h3><img src="icons/briefcase.png" alt=""></h3>
+							<h3>Conseillère de vente polyvalente</h3>
+							<em>Janvier 2014 - Septembre 2015</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="19/01/2015">
+							<h3><img src="icons/graduation-hat.png" alt=""></h3>
+							<h3>Formation pédagogique à l'ESPE Montpellier</h3>
+							<em>Septembre 2015-Juin 2016</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+
+						<li data-date="03/03/2015">
+							<h3><img src="icons/graduation-hat.png" alt=""></h3>
+							<h3>En formation pour devenir Développeuse Web avec UPTO by Simplon</h3>
+							<em>Septembre 2016-Juillet</em>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+							</p>
+						</li>
+					</ol> -->
+				<!-- </div> <! .events-content -->
+			<!-- </section> -->
+
+			<!--~~~~~~~~ Cube ~~~~~~~~-->
+
+<div class="container-main">
+	<h2 id="competences">Competences</h2>
+
+	<br>
+
+	<div class="animation-cube">
+
+	    <div class="cube">
+	        <div class="front"></div>
+
+	        <div class="back">
+						<h3>PAO</h3><br>
+						<div class="image-back">
+							<img src="images/photoshop.jpeg" alt="">
+							<img src="images/indesign.jpeg" alt="">
+						</div>
+					</div>
+
+	        <div class="top">
+						<h3>Developpement Web</h3><br>
+						<div class="image-top">
+							<img src="images/html_logo.png" alt="">
+							<img src="images/css_logo.png" alt="">
+							<img src="images/js_logo.png" alt="">
+							<img src="images/bootstrap-logo.png" alt="">
+							<img src="images/github.png" alt="">
+						</div>
+					</div>
+
+	        <div class="bottom">
+						<h3>OS</h3><br>
+						<div class="image-bottom">
+							<img src="images/apple.png" alt="">
+							<img src="images/linux.png" alt="">
+							<img src="images/windows.png" alt="">
+						</div>
+					</div>
+
+	        <div class="left">left</div>
+	        <div class="right"></div>
+	    </div>
+	</div>
+
+	<!--~~~~~~~~ Portfolio ~~~~~~~~-->
+	<!--~~~~~~~~ Carousel 3D ~~~~~~~~-->
+<hr>
+<h2 id="book">PORTFOLIO</h2>
+
+<div class="poster-main example">
+  <div class="poster-btn poster-prev-btn"></div>
+  <ul class="poster-list">
+    <li class="poster-item"><img src="integrations/Donuts/screenshot.png"></li>
+    <li class="poster-item"><img src="integrations/One-Million-Lines/onemillionlines.png"></li>
+    <li class="poster-item"><img class="mc" src="integrations/MaxiChallenge/screenshots/home-player.png"></li>
+    <!-- <li class="poster-item"><img src=".jpg"></li> -->
+    <li class="poster-item"><img src="integrations/Integration5/maquette.png"></li>
+		<li class="poster-item"><img src="integrations/Integration6/maquette.png"></li>
+  </ul>
+  <div class="poster-btn poster-next-btn"></div>
+</div>
+
+
+	<!--~~~~~~~~ Bas de page~~~~~~~~-->
+
+
+	<!--~~~~~~~~ Formation UpTO ~~~~~~~~-->
+<hr>
+	<h2 id="upto">UPTO by Simplon</h2>
+
+		<div class="logos">
+			<div><a href="http://upto-numerique.fr/"><img src="images/uptonumerique.gif" alt=""></a></div>
+			<div><a href="http://simplon.co/"><img src="images/simplon.png" alt=""></a></div>
+			<div><a href="http://www.face-herault.org/"><img src="images/face-herault.png" alt=""></a></div>
+			<div class="L"><a href="https://frenchsouth.digital/"><img src="images/french-south-digital.jpg" alt=""></a></div>
+			<div><a href="http://www.dell.fr/"><img src="images/dell.png" alt=""></a></div>
+			<div class="M"><a href="http://www.montpellier-bs.com/"><img src="images/logo_MBS.jpg" alt=""></a></div>
+		</div>
 
 
 
 
+	<!--~~~~~~~~ Modal - Contact ~~~~~~~~-->
+
+	<div id="modal" class="closed" class="modal1">
+	<btn id="close" type="button" data-dismiss="modal"><i class="icon icon-times icon-lg"></i>&times</btn>
+</div><!-- /# -->
 
 
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </div>
 </body>
+
+<!--~~~~~~~~ Footer ~~~~~~~~-->
+<footer id="footer">
+
+	<hr>
+	<div class="contain-fa">
+		<p>Retrouvez-moi sur les Reseaux Sociaux</p>
+			<a href="https://fr.linkedin.com/in/julieperbal"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+			<a href="http://www.viadeo.com/fr/profile/julie.perbal"><i class="fa fa-viadeo fa-lg" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/JuliePerbal"<i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			<a href=""<i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+	</div>
+
+	<hr>
+		<!--~~~~~~~~ Copyright ~~~~~~~~-->
+		<div class="copyright">
+			<p>Copyright
+				<i class="fa fa-copyright" aria-hidden="true"></i> 2016 | Julie Perbal</p>
+		</div><!-- /.copyright -->
+
+</footer>
+<!-- /#footer -->
+
+<!--~~~~~~~~ Back-To-Top ~~~~~~~~-->
+		<div id="back-to-top">
+			<a href="#">
+				<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</a>
+		</div><!-- /#back-to-top -->
+
+
+	<!--~~~~~~~~ Inclusion page JavaScript Cube 3D~~~~~~~~-->
+	<script type="text/javascript" src="js/cv.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+	<!--~~~~~~~~ Inclusion pages JS carousel 3D ~~~~~~~~-->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="Carousel/demo/js/PicCarousel.js"></script>
+
+	<!--~~~~~~~~ Inclusion pages JS Timeline ~~~~~~~~-->
+	<script src="horizontal-timeline/js/jquery-2.1.4.js"></script>
+	<script src="horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
+	<script src="horizontal-timeline/js/main.js"></script> <!-- Resource jQuery-->
+
+
+	<!--<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })(); -->
+
+		<!--~~~~~~~~ Inclusion pages JS Vertical Timeline + Script JS ~~~~~~~~-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="vertical-timeline/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+		$(function() {
+
+		var $sidescroll	= (function() {
+
+			// the row elements
+		var $rows			= $('#ss-container > div.ss-row'),
+			// we will cache the inviewport rows and the outside viewport rows
+			$rowsViewport, $rowsOutViewport,
+			// navigation menu links
+			$links			= $('#ss-links > a'),
+			// the window element
+			$win			= $(window),
+			// we will store the window sizes here
+			winSize			= {},
+			// used in the scroll setTimeout function
+			anim			= false,
+			// page scroll speed
+			scollPageSpeed	= 2000 ,
+			// page scroll easing
+			scollPageEasing = 'easeInOutExpo',
+			// perspective?
+			hasPerspective	= false,
+
+			perspective		= hasPerspective && Modernizr.csstransforms3d,
+			// initialize function
+			init			= function() {
+
+				// get window sizes
+				getWinSize();
+				// initialize events
+				initEvents();
+				// define the inviewport selector
+				defineViewport();
+				// gets the elements that match the previous selector
+				setViewportRows();
+				// if perspective add css
+				if( perspective ) {
+					$rows.css({
+						'-webkit-perspective'			: 600,
+						'-webkit-perspective-origin'	: '50% 0%'
+					});
+				}
+				// show the pointers for the inviewport rows
+				$rowsViewport.find('a.ss-circle').addClass('ss-circle-deco');
+				// set positions for each row
+				placeRows();
+
+			},
+			// defines a selector that gathers the row elems that are initially visible.
+			// the element is visible if its top is less than the window's height.
+			// these elements will not be affected when scrolling the page.
+			defineViewport	= function() {
+
+				$.extend( $.expr[':'], {
+
+					inviewport	: function ( el ) {
+						if ( $(el).offset().top < winSize.height ) {
+							return true;
+						}
+						return false;
+					}
+
+				});
+
+			},
+			// checks which rows are initially visible
+			setViewportRows	= function() {
+
+				$rowsViewport 		= $rows.filter(':inviewport');
+				$rowsOutViewport	= $rows.not( $rowsViewport )
+
+			},
+			// get window sizes
+			getWinSize		= function() {
+
+				winSize.width	= $win.width();
+				winSize.height	= $win.height();
+
+			},
+			// initialize some events
+			initEvents		= function() {
+
+				// navigation menu links.
+				// scroll to the respective section.
+				$links.on( 'click.Scrolling', function( event ) {
+
+					// scroll to the element that has id = menu's href
+					$('html, body').stop().animate({
+						scrollTop: $( $(this).attr('href') ).offset().top
+					}, scollPageSpeed, scollPageEasing );
+
+					return false;
+
+				});
+
+				$(window).on({
+					// on window resize we need to redefine which rows are initially visible (this ones we will not animate).
+					'resize.Scrolling' : function( event ) {
+
+						// get the window sizes again
+						getWinSize();
+						// redefine which rows are initially visible (:inviewport)
+						setViewportRows();
+						// remove pointers for every row
+						$rows.find('a.ss-circle').removeClass('ss-circle-deco');
+						// show inviewport rows and respective pointers
+						$rowsViewport.each( function() {
+
+							$(this).find('div.ss-left')
+									 .css({ left   : '0%' })
+									 .end()
+									 .find('div.ss-right')
+									 .css({ right  : '0%' })
+									 .end()
+									 .find('a.ss-circle')
+									 .addClass('ss-circle-deco');
+
+						});
+
+					},
+					// when scrolling the page change the position of each row
+					'scroll.Scrolling' : function( event ) {
+
+						// set a timeout to avoid that the
+						// placeRows function gets called on every scroll trigger
+						if( anim ) return false;
+						anim = true;
+						setTimeout( function() {
+
+							placeRows();
+							anim = false;
+
+						}, 10 );
+
+					}
+				});
+
+			},
+			// sets the position of the rows (left and right row elements).
+			// Both of these elements will start with -50% for the left/right (not visible)
+			// and this value should be 0% (final position) when the element is on the
+			// center of the window.
+			placeRows		= function() {
+
+					// how much we scrolled so far
+				var winscroll	= $win.scrollTop(),
+					// the y value for the center of the screen
+					winCenter	= winSize.height / 2 + winscroll;
+
+				// for every row that is not inviewport
+				$rowsOutViewport.each( function(i) {
+
+					var $row	= $(this),
+						// the left side element
+						$rowL	= $row.find('div.ss-left'),
+						// the right side element
+						$rowR	= $row.find('div.ss-right'),
+						// top value
+						rowT	= $row.offset().top;
+
+					// hide the row if it is under the viewport
+					if( rowT > winSize.height + winscroll ) {
+
+						if( perspective ) {
+
+							$rowL.css({
+								'-webkit-transform'	: 'translate3d(-75%, 0, 0) rotateY(-90deg) translate3d(-75%, 0, 0)',
+								'opacity'			: 0
+							});
+							$rowR.css({
+								'-webkit-transform'	: 'translate3d(75%, 0, 0) rotateY(90deg) translate3d(75%, 0, 0)',
+								'opacity'			: 0
+							});
+
+						}
+						else {
+
+							$rowL.css({ left 		: '-50%' });
+							$rowR.css({ right 		: '-50%' });
+
+						}
+
+					}
+					// if not, the row should become visible (0% of left/right) as it gets closer to the center of the screen.
+					else {
+
+							// row's height
+						var rowH	= $row.height(),
+							// the value on each scrolling step will be proporcional to the distance from the center of the screen to its height
+							factor 	= ( ( ( rowT + rowH / 2 ) - winCenter ) / ( winSize.height / 2 + rowH / 2 ) ),
+							// value for the left / right of each side of the row.
+							// 0% is the limit
+							val		= Math.max( factor * 50, 0 );
+
+						if( val <= 0 ) {
+
+							// when 0% is reached show the pointer for that row
+							if( !$row.data('pointer') ) {
+
+								$row.data( 'pointer', true );
+								$row.find('.ss-circle').addClass('ss-circle-deco');
+
+							}
+
+						}
+						else {
+
+							// the pointer should not be shown
+							if( $row.data('pointer') ) {
+
+								$row.data( 'pointer', false );
+								$row.find('.ss-circle').removeClass('ss-circle-deco');
+
+							}
+
+						}
+
+						// set calculated values
+						if( perspective ) {
+
+							var	t		= Math.max( factor * 75, 0 ),
+								r		= Math.max( factor * 90, 0 ),
+								o		= Math.min( Math.abs( factor - 1 ), 1 );
+
+							$rowL.css({
+								'-webkit-transform'	: 'translate3d(-' + t + '%, 0, 0) rotateY(-' + r + 'deg) translate3d(-' + t + '%, 0, 0)',
+								'opacity'			: o
+							});
+							$rowR.css({
+								'-webkit-transform'	: 'translate3d(' + t + '%, 0, 0) rotateY(' + r + 'deg) translate3d(' + t + '%, 0, 0)',
+								'opacity'			: o
+							});
+
+						}
+						else {
+
+							$rowL.css({ left 	: - val + '%' });
+							$rowR.css({ right 	: - val + '%' });
+
+						}
+
+					}
+
+				});
+
+			};
+
+		return { init : init };
+
+		})();
+
+		$sidescroll.init();
+
+		});
+		</script>
+
+
+
+	</script>
+
+
 </html>
