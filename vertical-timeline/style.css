@@ -64,7 +64,7 @@ h2.ss-subtitle:after{
     float: left;
   	overflow: hidden;
 	  padding-bottom: 100px;
-    background: #f7f7f7 url(../images/old_wall.jpg) repeat;
+    background: #f7f7f7 url(images/old_wall.jpg) repeat;
 }
 .ss-container h2{
     font-size: 40px;
