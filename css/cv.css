@@ -265,38 +265,6 @@ aside
 	color: #FF1493;
 }*/
 
-/*<------------------ Modal ----------------->*/
-#modal.closed {
-    display: none;
-}
-#modal.open {
-    display: true;
-    background-color: grey;
-		opacity: 0.8;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-#modal {
-    position: absolute;
-    top: 2em;
-    left: 36%;
-    height: 400px;
-    width: 600px;
-    margin-left: -200px;
-    border-radius: 10%;
-    font-weight: bold;
-    color: #fff;
-}
-/*#modal p
-{
-  margin-bottom: 40%;
-}*/
-
-
-/*<!--~~~~~~~~ Centre d'intérêts ~~~~~~~~-->*/
-
-
 
 /*<!--~~~~~~~~ Portfolio ~~~~~~~~-->*/
 /*<!--~~~~~~~~ Carousel 3D ~~~~~~~~-->*/
@@ -483,6 +451,13 @@ hr
 	height: 102px;
 	padding-right: 3%;
 }
+.upto
+{
+	padding-top: 5%;
+	color: white;
+	font-family: 'basic_title_fontregular';
+	font-size: 20px;
+}
 /*<!--~~~~~~~~ Footer ~~~~~~~~-->*/
 #footer
 {
@@ -556,6 +531,36 @@ hr
 	content:"\f077";
 	vertical-align: -moz-middle-with-baseline;
 }
+
+
+/*<------------------ Modal ----------------->*/
+#modal.closed {
+    display: none;
+}
+#modal.open {
+    display: true;
+    background-color: grey;
+		opacity: 0.8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#modal {
+    position: absolute;
+    top: 2em;
+    left: 36%;
+    height: 400px;
+    width: 600px;
+    margin-left: -200px;
+    border-radius: 10%;
+    font-weight: bold;
+    color: #fff;
+}
+/*#modal p
+{
+  margin-bottom: 40%;
+}*/
+
 
 
 
