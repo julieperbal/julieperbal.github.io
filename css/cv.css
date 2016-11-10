@@ -218,7 +218,7 @@ aside
 .bio h3
 {
 	padding-left: 4%;
-	font-weight: inherit;
+	font-size: unset;
 }
 .built
 {
@@ -405,6 +405,11 @@ aside
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.bottom img{
+	height: 130px;
+	width: 110px;
+}
+
 .front {
     transform: translateZ(100px);
 }

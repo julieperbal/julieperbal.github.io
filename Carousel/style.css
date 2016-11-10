@@ -89,3 +89,7 @@ abbr, acronym { border: 0; }
   right: 0;
   background: url(right.png) no-repeat center center;
 }
+.poster-item .mc
+{
+  height: inherit;
+}

@@ -185,7 +185,7 @@ h2.ss-subtitle:after{
     margin-top: 34px;
 	padding: 10px 15px;
 	background: rgba(26, 27, 33, 0.6);
-	/*text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8)*/
+	text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8)
 }
 .ss-container .ss-medium h3{
 	margin-top: 82px;
@@ -237,7 +237,7 @@ h2.ss-subtitle:after{
     background-image: url(../images/7.jpg);
 }
 .ss-circle-8{
-    background-image: url(images/index.jpeg);
+    background-image: url(images/giphy.gif);
 }
 .ss-circle-9{
     background-image: url(../images/9.jpg);
@@ -258,7 +258,7 @@ h2.ss-subtitle:after{
     background-image: url(../images/14.jpg);
 }
 .ss-circle-15{
-    background-image: url(images/diplome.jpeg);
+    background-image: url(images/graduate.gif);
 }
 .ss-circle-16{
     background-image: url(../images/16.jpg);
@@ -276,10 +276,10 @@ h2.ss-subtitle:after{
     background-image: url(../images/20.jpg);
 }
 .ss-circle-21{
-    background-image: url(images/experiences.jpg);
+    background-image: url(images/cm.gif);
 }
 .ss-circle-22{
-    background-image: url(images/pe2.jpg);
+    background-image: url(images/teacher.gif);
 }
 .ss-circle-23{
     background-image: url(../images/23.jpg);
@@ -291,10 +291,10 @@ h2.ss-subtitle:after{
     background-image: url(../images/25.jpg);
 }
 .ss-circle-26{
-    background-image: url(images/images3.jpeg);
+    background-image: url(images/seller.gif);
 }
 .ss-circle-27{
-    background-image: url(images/images.jpeg);
+    background-image: url(images/coding.gif);
 }
 .ss-circle-28{
     background-image: url(../images/28.jpg);
