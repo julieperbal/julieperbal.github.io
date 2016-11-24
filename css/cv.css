@@ -10,7 +10,8 @@ body
 	background-attachment: fixed;
 	background-position: 50% 50%;
 	background-size: 100%;
-	background-blend-mode: soft-light;
+	/*background-blend-mode: soft-light;*/
+	background-blend-mode: difference;
 }
 .container-main
 {
@@ -57,6 +58,14 @@ body
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'megrimmedium';
+    src: url('../fonts/megrim-webfont.woff2') format('woff2'),
+         url('../fonts/megrim-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*<!--~~~~~~~~ navbar ~~~~~~~~-->*/
 .navbar
 {
@@ -84,7 +93,7 @@ li a
 	align-items: center;
   margin: 0 17px;
 	text-decoration: none;
-  font-size: 17px;
+  font-size: 23px;
 	color: silver;
 	text-transform: uppercase;
 	font-family: 'basic_title_fontregular', arial;
@@ -151,11 +160,11 @@ h4
 	font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: 0.2em;
-	font-family:'red_moon_risingregular';
+	font-family:'megrimmedium';
 }
 h2
 {
-	font-family: 'basic_title_fontregular';
+	font-family: 'megrimmedium';
 	color: #ffffff;
 	font-weight:600;
 	font-size: 52px;
@@ -408,6 +417,16 @@ aside
 .bottom img{
 	height: 130px;
 	width: 110px;
+}
+.image-bottom-rh
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+img .rh1, .rh2{
+	width: 300px;
+	height: 130px;
 }
 
 .front {

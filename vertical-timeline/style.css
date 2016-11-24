@@ -1,5 +1,5 @@
 h2.ss-subtitle{
-    padding: 10px 10px 40px;
+    padding: 10px 10px 70px;
     font-size: 52px;
     text-transform: uppercase;
     color: rgba(0,0,0,0.8);
@@ -64,7 +64,7 @@ h2.ss-subtitle:after{
     float: left;
   	overflow: hidden;
 	  padding-bottom: 100px;
-    background: #f7f7f7 url(images/old_wall.jpg) repeat;
+    background: #f7f7f7 url(images/mur.jpg) repeat;
 }
 .ss-container h2{
     font-size: 40px;
@@ -72,6 +72,7 @@ h2.ss-subtitle:after{
     color: black;
 	  text-shadow: 0px 1px 1px #fff;
   	padding: 20px 0px;
+    font-weight: bold;
 }
 .ss-container:before{
     position: absolute;
@@ -140,10 +141,10 @@ h2.ss-subtitle:after{
 	width: 29%;
 	height: 0px;
 	border-bottom: 5px dotted #ddd;
-	border-bottom: 5px dotted rgba(17, 17, 22, 0.3);
-	-webkit-box-shadow: 0px 1px 1px #fff;
-	-moz-box-shadow: 0px 1px 1px #fff;
-	box-shadow: 0px 1px 1px #fff;
+	border-bottom: 5px dotted rgba(17, 17, 22, 0.6);
+	/*-webkit-box-shadow: 0px 1px 1px #fff;
+	-moz-box-shadow: 0px 1px 1px #fff;*/
+	/*box-shadow: 0px 1px 1px #fff;*/
 	position: absolute;
 	top: 50%;
 	content: '';
@@ -184,7 +185,7 @@ h2.ss-subtitle:after{
 .ss-container h3{
     margin-top: 34px;
 	padding: 10px 15px;
-	background: rgba(26, 27, 33, 0.6);
+	/*background: rgba(26, 27, 33, 0.6);*/
 	text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.8)
 }
 .ss-container .ss-medium h3{
@@ -194,13 +195,13 @@ h2.ss-subtitle:after{
 	margin-top: 133px;
 }
 .ss-container .ss-left h3{
-	border-right: 5px solid rgba(164,166,181,0.8);
+	/*border-right: 5px solid rgba(164,166,181,0.8);*/
 }
 .ss-container .ss-right h3{
-	border-left: 5px solid rgba(164,166,181,0.8);
+	/*border-left: 5px solid rgba(164,166,181,0.8);*/
 }
 .ss-container h3 span{
-    color: rgba(255,255,255,0.8);
+    color: white;
     font-size: 13px;
     display: block;
     padding-bottom: 5px;
