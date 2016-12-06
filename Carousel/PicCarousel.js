@@ -113,6 +113,7 @@
 							height = next.height(),
 							zIndex = next.css("zIndex"),
 							opacity = next.css("opacity"),
+							brightness = next.css("brightness"),
 							left = next.css("left"),
 							top = next.css("top");
 							zIndexArr.push(zIndex);
@@ -120,6 +121,7 @@
 									width:width,
 									height:height,
 									opacity:opacity,
+									brightness:brightness,
 									left:left,
 									top:top
 							},me.settings.speed,function(){
@@ -160,7 +162,8 @@
 							zIndex:level,
 							width:rw,
 							height:rh,
-							opacity:1/(++j),
+							// brightness:-50%,
+							opacity:0.6/(++j),
 							left:fixOffsetLeft+(++i)*gap-rw,
 							top:me.setVertucalAlign(rh)
 					});
@@ -177,7 +180,7 @@
 							zIndex:i,
 							width:lw,
 							height:lh,
-							opacity:1/oloop,
+							opacity:0.4/oloop,
 							left:i*gap,
 							top:me.setVertucalAlign(lh)
 					});
@@ -264,7 +267,7 @@
 		"posterWidth":520,	//幻灯片第一帧的宽度
 		"posterHeight":300, //幻灯片第一张的高度
 		"scale":0.9,		//记录显示比例关系
-		"speed":300,		//记录幻灯片滚动速度
+		"speed":400,		//记录幻灯片滚动速度
 		"autoPlay":false,	//是否开启自动播放
 		"delay":500,		//自动播放间隔
 		"verticalAlign":"middle"	//图片对齐位置

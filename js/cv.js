@@ -1,20 +1,6 @@
-// <!--~~~~~~~~ Modal ~~~~~~~~-->
-$modal = document.getElementById("modal");
-$open = document.getElementById("open");
-$close = document.getElementById("close");
+//**************************************
 
-$open.onclick = function () {
-    $modal.classList.remove("closed");
-    $modal.classList.add("opened");
-}
+					// FADE IN UP
 
-$close.onclick = function () {
-    $modal.classList.remove("opened");
-    $modal.classList.add("closed");
-}
-
-// <!--~~~~~~~~ Fade In Up ~~~~~~~~-->
+//*************************************
 $("h1").addClass("fadeInUp");
-
-
-// <!--~~~~~~~~ Carousel 3D ~~~~~~~~-->

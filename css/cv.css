@@ -21,7 +21,11 @@ body
 	/*font-family: */
 }
 
-/*<!--~~~~~~~~ Font-face ~~~~~~~~-->*/
+/**************************************
+
+  		        FONT-FACE
+
+/*************************************/
 /* Utilisation de font-face et d'une nouvelle police sur les titres de sections de mon CV + ombrage et bordure */
 @font-face {
     font-family: 'blakeregular';
@@ -64,9 +68,13 @@ body
          url('../fonts/megrim-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-/*<!--~~~~~~~~ navbar ~~~~~~~~-->*/
+
+/**************************************
+
+  		           NAVBAR
+
+/*************************************/
 .navbar
 {
   display: flex;
@@ -94,7 +102,7 @@ li a
   margin: 0 17px;
 	text-decoration: none;
   font-size: 23px;
-	color: silver;
+	color: white;
 	text-transform: uppercase;
 	font-family: 'basic_title_fontregular', arial;
 	font-weight: bold;
@@ -103,7 +111,7 @@ li a
 }
 li a:hover
 {
-	color: white;
+	color: #fc50d1;
 }
 
 /*.rotate a.modal1:hover
@@ -128,8 +136,11 @@ li a:hover
   background-position: 50% 0%;
 }*/
 
+/**************************************
 
-/*<!--~~~~~~~~ Jumbotron ~~~~~~~~-->*/
+  		        JUMBOTRON
+
+/*************************************/
 .jumbotron
 {
 	box-sizing: border-box;
@@ -157,7 +168,7 @@ h4
 {
 	color: #cccccc;
 	font-size: 25px;
-	font-weight: 300;
+	/*font-weight: 300;*/
 	line-height: 1.5;
 	letter-spacing: 0.2em;
 	font-family:'megrimmedium';
@@ -172,7 +183,11 @@ h2
 	/*font-weight: bold;*/
 }
 
-/*<!--~~~~~~~~ Animation Nom ~~~~~~~~-->*/
+/**************************************
+
+  		     ANIMATION NOM
+
+/*************************************/
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -196,19 +211,11 @@ aside
 	text-align: center;
 }
 
-/*<!--~~~~~~~~ Contenant détails CV ~~~~~~~~-->*/
+/**************************************
 
-/* Positionnage des blocs */
-/*#conteneur
-{
-	display: flex;
-	margin: auto;
-	justify-content: space-around;
-	flex-direction: column;
-	padding-top: 5%;
-}*/
+  		           BIO
 
-/*<!--~~~~~~~~ Bio ~~~~~~~~-->*/
+/*************************************/
 .bio
 {
 	display: flex;
@@ -238,99 +245,11 @@ aside
 	border-radius: 50%;
 }*/
 
-/*<------------------ Vertical Timeline ----------------->*/
-.logos-experience-sncf
-{
-	height: 50px;
-}
-.logos-experience-idrac
-{
-	height: 75px;
-}
-.logos-experience
-{
-	height: 80px;
-}
+/**************************************
 
-/*<!--~~~~~~~~ Expériences/Compétences/Formation ~~~~~~~~-->*/
-.element
-{
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	height: auto;
-	width: 100%;
-	vertical-align: top;
-	text-align: justify;
-}
+  		           CUBE
 
-/*h3
-{
-	display: flex;
-	font-family: 'AmazingSound', Arial;
-	text-shadow: 2px 2px 4px black;
-	/*border: 2px black solid;*/
-	/*text-align: center;
-	color: #FF1493;
-}*/
-
-
-/*<!--~~~~~~~~ Portfolio ~~~~~~~~-->*/
-/*<!--~~~~~~~~ Carousel 3D ~~~~~~~~-->*/
-#book
-{
-	padding-bottom: 7%;
-}
-.poster-main {
-  width: 1000px;
-  height: 500px;
-  position: relative;
-  margin: 0 auto;
-	padding-bottom: 30%;
-}
-
-.poster-main a, .poster-main img
-{
-	display: block;
-	height: 170%;
-}
-
-.poster-main .poster-list {
-  width: 1000px;
-  height: 500px;
-}
-
-.poster-main .poster-list {
-  width: 200px;
-  height: 500px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.poster-main .poster-btn {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  cursor: pointer;
-	color: #9400D3;
-}
-
-.poster-main .poster-prev-btn {
-  left: 0;
-  background: url(../img/left.png) no-repeat center center;
-}
-
-.poster-main .poster-next-btn {
-  right: 0;
-  background: url(../img/right.png) no-repeat center center;
-}
-.poster-item
-{
-	height: 250px;
-	left: 127px;
-}
-/*<!--~~~~~~~~ Cube ~~~~~~~~-->*/
+/*************************************/
 /*<!--~~~~~~~~ Définir notion de perspective pour transformation 3D grâce à perspective et perspective-origin ~~~~~~~~-->*/
 .container-main h2{
 	padding-top: 5%;
@@ -441,15 +360,120 @@ img .rh1, .rh2{
     animation: spin 20s infinite linear;
 }
 
+/**************************************
+
+  		     VERTICAL TIMELINE
+
+/*************************************/
+.logos-experience-sncf
+{
+	height: 50px;
+}
+.logos-experience-idrac
+{
+	height: 75px;
+}
+.logos-experience
+{
+	height: 80px;
+}
+
+/*<!--~~~~~~~~ Expériences/Compétences/Formation ~~~~~~~~-->*/
+.element
+{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height: auto;
+	width: 100%;
+	vertical-align: top;
+	text-align: justify;
+}
+
+/*h3
+{
+	display: flex;
+	font-family: 'AmazingSound', Arial;
+	text-shadow: 2px 2px 4px black;
+	/*border: 2px black solid;*/
+	/*text-align: center;
+	color: #FF1493;
+}*/
+
+/**************************************
+
+  	  PORTFOLIO - CAROUSEL 3D
+
+/*************************************/
+#book
+{
+	padding-bottom: 7%;
+}
+.container-main h2
+{
+	padding-top: 5%;
+}
+.poster-main {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+	padding-bottom: 30%;
+}
+
+.poster-main a, .poster-main img
+{
+	display: block;
+	height: 170%;
+}
+
+.poster-main .poster-list {
+  width: 1000px;
+  height: 500px;
+}
+
+.poster-main .poster-list {
+  width: 200px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.poster-main .poster-btn {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  cursor: pointer;
+	color: #9400D3;
+}
+
+.poster-main .poster-prev-btn {
+  left: 0;
+  background: url(../img/left.png) no-repeat center center;
+}
+
+.poster-main .poster-next-btn {
+  right: 0;
+  background: url(../img/right.png) no-repeat center center;
+}
+.poster-item
+{
+	height: 250px;
+	left: 127px;
+}
+
 /*<!--~~~~~~~~ HR ~~~~~~~~-->*/
 hr
 {
   color: rgba(255, 255, 255, 0.2);
 }
 
+/**************************************
 
-/*<!--~~~~~~~~ Formation UpTO ~~~~~~~~-->*/
+  		     FORMATION UPTO
 
+/*************************************/
 .logos
 {
 	display: flex;
@@ -482,20 +506,24 @@ hr
 	font-family: 'basic_title_fontregular';
 	font-size: 20px;
 }
-/*<!--~~~~~~~~ Footer ~~~~~~~~-->*/
+
+/**************************************
+
+  		         FOOTER
+
+/*************************************/
 #footer
 {
 	font-family: 'basic_title_fontregular';
 	font-size: 17px;
 	font-weight: bold;
 }
-#footer p
+#footer .contain-fa p
 {
 	text-align: center;
 	color: #fff;
-	font-size: smaller;
-	margin-top: 5%;
-	padding-bottom: 5%;
+	font-size: 25px;
+	padding-bottom: 1%;
 	letter-spacing: 0.1em;
 }
 
@@ -505,9 +533,9 @@ hr
 	flex-direction: row;
 	text-align: center;
 	color: #fff;
-	padding-top: 2%;
+	padding-top: 7%;
 	letter-spacing: 0.5em;;
-	/*margin-bottom: 5%;*/
+	margin-bottom: 1%;
 	font-size: 23px;
 	padding-bottom: 5%;
 }
@@ -515,11 +543,31 @@ hr
 {
 	text-decoration: none;
 	color:inherit;
+	font-size: 3em;
+}
+#footer a:hover
+{
+	opacity: 0.8;
+	color: #fc0fc0;
 }
 
-/*<!--~~~~~~~~ Copyright ~~~~~~~~-->*/
-.copyright
+.contain-fa a img
 {
+	height:60px;
+}
+.contain-fa a img:hover
+{
+	/*opacity: 0.8;*/
+	color: #fc0fc0;
+}
+/**************************************
+
+  		         COPYRIGHT
+
+/*************************************/
+.copyright p
+{
+	text-align: center;
 	font-family: 'basic_title_fontregular';
 	font-size: 17px;
 	font-weight: bold;
@@ -531,7 +579,11 @@ hr
 	color: grey;
 }
 
-/*<!--~~~~~~~~ Back-To-Top ~~~~~~~~-->*/
+/**************************************
+
+  		        BACK-TO-TOP
+
+/*************************************/
 #back-to-top
 {
 	position: fixed;
@@ -546,7 +598,7 @@ hr
 	border-radius: 40px;
 	width: 30px;
 	height: 30px;
-	background-color: #333333;
+	background-color: #fc50d1;
 	color: #FFFFFF;
 	text-align: center;
 }
@@ -556,34 +608,6 @@ hr
 	vertical-align: -moz-middle-with-baseline;
 }
 
-
-/*<------------------ Modal ----------------->*/
-#modal.closed {
-    display: none;
-}
-#modal.open {
-    display: true;
-    background-color: grey;
-		opacity: 0.8;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-#modal {
-    position: absolute;
-    top: 2em;
-    left: 36%;
-    height: 400px;
-    width: 600px;
-    margin-left: -200px;
-    border-radius: 10%;
-    font-weight: bold;
-    color: #fff;
-}
-/*#modal p
-{
-  margin-bottom: 40%;
-}*/
 
 
 
