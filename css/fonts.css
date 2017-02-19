@@ -1,0 +1,89 @@
+/***************************************
+
+               FONTS
+
+<**************************************/
+@font-face {
+    font-family: 'a_little_sunshineregular';
+    src: url('../fonts/a_little_sunshine-webfont.woff2') format('woff2'),
+         url('../fonts/a_little_sunshine-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dk_lemon_yellow_sunregular';
+    src: url('../fonts/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+         url('../fonts/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rajdhanibold';
+    src: url('../fonts/rajdhani-bold-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rajdhanilight';
+    src: url('../fonts/rajdhani-light-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rajdhanimedium';
+    src: url('../fonts/rajdhani-medium-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rajdhaniregular';
+    src: url('../fonts/rajdhani-regular-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rajdhanisemibold';
+    src: url('../fonts/rajdhani-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blakeregular';
+    src: url('../fonts/blake2-webfont.woff2') format('woff2'),
+         url('../fonts/blake2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'clarissapersonaluse';
+    src: url('../fonts/clarissapersonaluse-webfont.woff2') format('woff2'),
+         url('../fonts/clarissapersonaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'olivia_garciaregular';
+    src: url('../fonts/olivia_garcba-webfont.woff2') format('woff2'),
+         url('../fonts/olivia_garcba-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'paper_clipregular';
+    src: url('../fonts/paperclip-webfont.woff2') format('woff2'),
+         url('../fonts/paperclip-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dk_languedocregular';
+    src: url('../fonts/dk_languedoc-webfont.woff2') format('woff2'),
+         url('../fonts/dk_languedoc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

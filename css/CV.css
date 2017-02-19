@@ -1,0 +1,558 @@
+body{
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  /*background-color: rgb(250, 250, 250);*/
+}
+#container-main{
+  margin: 0 auto;
+  width: :100%;
+  margin:0;
+}
+
+/***************************************
+
+               PARALLAX
+
+<**************************************/
+section {
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  background-color: #000;}
+
+  .image {
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    width: 100%;
+    height: 100%;
+    /*position: absolute;*/
+    z-index: 500;
+    /*opacity: 0.4;*/
+  }
+
+  /*.stuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    max-width: 70%;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000;
+    color: #e67e22;
+    margin: 0 auto;
+    font-size: 26px;
+    position: relative;}*/
+
+    h2 {
+      margin: 0px;
+    }
+    &:before, &:after {
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: #d35400;
+      content: "";
+      margin: 30px 0;
+    }
+  }
+}
+}
+
+/***************** NAVBAR **********************/
+.navbar{
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+.navbar.navbar-default.navbar-fixed-top{
+  min-height: 70px;
+}
+
+/***************** CAROUSEL **********************/
+#photos{
+  background-image: url("../images/image3.jpg"); /*choix de l'image*/
+  min-height: 768px; /* choisir une taille spécifique */
+  background-attachment: fixed;/* Créer l'effet parallax scrolling */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide1:before {
+  background-image: url("../images/image3.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+/******************* PRESENTATION ********************/
+#presentation{
+  padding-top: 20%;
+  padding-left: 3%;
+  background-color: white;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#presentation .cercles{
+  margin-left: 5%;
+  height: 250px;
+  width: 250px;
+}
+#presentation .cercles a{
+  text-decoration: none;
+}
+#presentation .first{
+  border-radius: 50%;
+  background-image: url('../images/moi.JPG');
+  background-size: 170px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+  /*padding-bottom: 5%;*/
+}
+#presentation .second{
+  border-radius: 50%;
+  background-image: url('../images/road-street-sign-way.jpg');
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: 259px;
+  background-position: left;
+  height: 170px;
+  width: 170px;
+}
+#presentation .second:hover{
+  filter: none;
+}
+#presentation .third{
+  border-radius: 80%;
+  background-image: url('../images/pexels-photo.jpg');
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: left;
+  height: 170px;
+  width: 170px;
+	background-repeat: no-repeat;
+}
+#presentation .third:hover{
+  filter: none;
+}
+#presentation .cercles h2{
+  /*padding-top: 35%;*/
+  position:static;
+  z-index: 100;
+  font-family: 'rajdhaniregular';
+}
+#presentation .text h2{
+  margin-right: 20%;
+  padding-left: 5%;
+}
+#presentation .text{
+  height: 50px;
+  padding-top: 20%;
+  /*position: static;*/
+}
+.animated {
+transition: width 700ms;
+}
+.first:hover,
+.first:focus{
+  transform: scale(1.2);
+  /*box-shadow: 0 0 65px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;*/
+}
+.second:hover,
+.second:focus{
+  transform: scale(1.2);
+}
+.third:hover,
+.third:focus{
+  transform: scale(1.2);
+}
+#presentation .grayscale img
+{
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+}
+#presentation .grayscale img:hover
+{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+}
+
+/*************** COMPETENCES ET REALISATIONS ************************/
+#bacground{
+  margin-top: 10%;
+  height: 800px;
+  background-image: url(../images/workspace.jpg); /*choix de l'image*/
+  background-size: 2600px 3000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content-articles{
+  justify-content: space-around;
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 15%;
+}
+#content-articles h2{
+  text-align: center;
+  margin-top: 30%;
+}
+
+#content-articles div{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  padding-top: 2%;
+}
+#content-articles div:hover{
+  -moz-box-shadow: 5px 5px 5px 0px #cfcfcf;
+  -webkit-box-shadow: 5px 5px 5px 0px #cfcfcf;
+  -o-box-shadow: 5px 5px 5px 0px #cfcfcf;
+  box-shadow: 5px 5px 5px 0px #cfcfcf;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+div a{
+  color: inherit;
+  text-decoration: none;
+}
+div a:hover{
+  color: inherit;
+  text-decoration: none;
+}
+/****************** BAS DE PAGE *********************/
+#footer{
+  background: rgb(90, 90, 90);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-bottom: 3%;
+}
+#footer h3 img{
+  width: 70px;
+  height: 70px;
+  flex-direction: row;
+}
+#social-media a {
+  diplay: flex;
+	flex-direction: row;
+	text-align: center;
+  justify-content: center;
+  letter-spacing: 0.5em;;
+  font-size: 60px;
+  color: white;
+}
+
+  /***************************************
+
+               PAGE COMPETENCES
+
+  <**************************************/
+  #skills{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../images/abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #container-skills{
+    margin: 0 auto;
+    width: 90%;
+  }
+  #container-skills h1{
+    font-family: 'dk_lemon_yellow_sunregular';
+    font-size: 50px;
+    text-align: center;
+  }
+  #dev div{
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-left: 7%;
+  }
+  #dev div img{
+    width: 90px;
+    height: 90px;
+    justify-content: space-around;
+    margin-left: 8%;
+    margin-top: 5%;
+
+    position: relative;
+  	top: 0;
+  	transition: all 0.3s ease-in;
+  }
+  #com div{
+    padding-top: 4%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-left: 7%;
+  }
+  #com div img{
+    width: 170px;
+    height: 130px;
+    justify-content: space-around;
+    margin-left: 10%;
+
+    position: relative;
+  	top: 0;
+  	transition: all 0.3s ease-in;
+  }
+  #rh div{
+    padding-top: 1%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 7%;
+  }
+  #rh div img{
+    width: 170px;
+    height: 130px;
+    justify-content: space-around;
+    margin-left: 10%;
+
+    position: relative;
+  	top: 0;
+  	transition: all 0.3s ease-in;
+  }
+  #pao div{
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-left: 7%;
+  }
+  #pao div img{
+    width: 90px;
+    height: 90px;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 5%;
+
+    position: relative;
+  	top: 0;
+  	transition: all 0.3s ease-in;
+  }
+#container-skills img:hover{
+  	box-shadow: 0 0 5px #9b885e,0 0 5px #9b885e,0 0 5px #9b885e;
+  }
+  #dev .php{
+    width: 130px;
+  }
+  #dev .sql{
+    width: 130px;
+  }
+  #com .cm{
+    width: 130px;
+  }
+  #rh .formation{
+    width: 200px;
+  }
+
+#container-skills img:hover,
+#container-skills img:focus {
+  	top: -10px;
+  }
+#container-skills img:hover:before,
+#container-skills img:focus:before {
+  	bottom: -11px;
+  	left: -3px;
+  	width: 106%;
+  	height: 4px;
+  	background: #bcae8f;
+  	box-shadow: 0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f,0 0 9px #bcae8f;
+  }
+
+  /***************************************
+
+             PAGE REALISATIONS
+
+  <**************************************/
+  #rea{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url("../images/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #container-rea{
+    width: 90%;
+    margin: 0 auto;
+    /*padding-top: 7%;*/
+    padding-left: 6%;
+  }
+  #container-rea h1{
+    font-family: 'dk_lemon_yellow_sunregular';
+    font-size: 50px;
+    text-align: center;
+  }
+  #container-rea .rea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15%;
+    padding-top: 4%;
+  }
+  #container-rea a{
+    width: 30%
+  }
+  #container-rea img{
+    height: 80%;
+    width: 80%;
+  }
+  #container-rea img p{
+    overflow: hidden;
+  }
+  #container-rea p{
+    color:
+  }
+  #container-rea img:hover,
+  #container-rea img:focus {
+  	transform: scale(1.2);
+  	box-shadow: 0 0 65px white inset, 0 0 50px white inset, 0 0 50px;
+    /*filter: opacity(0.1);*/
+  }
+  #container-rea p:hover{
+    position: relative;
+    display: block;
+  }
+  /***************************************
+
+               PAGE HOBBIES
+
+  <**************************************/
+  #training{
+    margin: 0 auto;
+    width: 100%;
+  }
+  #container-training{
+    margin: 0 auto;
+    width: 90%;
+  }
+  #container-training h1{
+    align-items: center;
+    font-family: 'dk_lemon_yellow_sunregular';
+    font-size: 50px;
+    text-align: center;
+  }
+  #container-training h2{
+    font-family: 'a_little_sunshineregular';
+    font-size: 35px;
+    color: #8A2BE2;
+  }
+  #hobbies{
+    display: flex;
+  }
+  #hobbies .cercles{
+    margin-left: 5%;
+    height: 250px;
+    width: 350px;
+  }
+  #hobbies .first{
+    border-radius: 50%;
+    background-image: url('../images/happy-feet.jpg');
+    background-size: 270px;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 170px;
+  }
+  #hobbies .second{
+    border-radius: 50%;
+    background-image: url('../images/plongee.jpg');
+    background-repeat: no-repeat;
+    background-size: 259px;
+    background-position: center;
+    height: 170px;
+    width: 170px;
+  }
+
+  #hobbies .third{
+    border-radius: 80%;
+    background-image: url('../images/Fitness.jpg');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: left;
+    height: 170px;
+    width: 170px;
+  	background-repeat: no-repeat;
+  }
+  #hobbies .fourth{
+    border-radius: 80%;
+    background-image: url('../images/roller.jpg');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: center;
+    height: 170px;
+    width: 170px;
+  	background-repeat: no-repeat;
+  }
+
+  #hobbies .cercles h3{
+    position:static;
+    z-index: 100;
+    font-family: 'rajdhaniregular';
+  }
+  #hobbies .text h3{
+    margin-right: 22%;
+  }
+  #hobbies .text{
+    height: 50px;
+    text-align: center;
+  }
+  #hobbies .animated {
+  transition: width 700ms;
+  }
+  #hobbies .first:hover,
+  #hobbies .first:focus{
+    transform: scale(1.2);
+  }
+  #hobbies .second:hover,
+  #hobbies .second:focus{
+    transform: scale(1.2);
+  }
+  #hobbies .third:hover,
+  #hobbies .third:focus{
+    transform: scale(1.2);
+  }
+  #hobbies .fourth:hover,
+  #hobbies .fourth:focus{
+    transform: scale(1.2);
+  }
+
+  #travel{
+    display: flex;
+    flex-direction: row;
+  }
+  #travel a{
+    padding-top: 7%;
+  }
+  #travel img{
+    height: 300px;
+  }
+  .shake-slow{
+    margin-top: -7%;
+  }
