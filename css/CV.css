@@ -253,6 +253,10 @@ div a:hover{
   height: 70px;
   flex-direction: row;
 }
+#social-media div{
+  display: flex;
+  justify-content: center;
+}
 #social-media a {
   diplay: flex;
 	flex-direction: row;
