@@ -262,6 +262,224 @@ div a:hover{
   font-size: 60px;
   color: white;
 }
+/***************************************
+
+               PAGE PARCOURS
+
+<**************************************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#parcours {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+
+}  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #9370D8;
+  padding: 50px 0;
+}
+
+.container-way {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#parcours h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: #C0C0C0;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #9370D8;
+}
+.timeline img{
+  height: 60px;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #9370D8 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #9370D8;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #9370D8;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+#continued{
+  font-family: 'rajdhaniregular';
+  font-size: 35px;
+  text-align: center;
+}
+.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dot 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dot 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* GENERAL MEDIA QUERIES - PAGE PARCOURS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
 
   /***************************************
 
