@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Pour que la page ne dézoom pas sur écran mobile-->
 
 <!--~~~~~~~~ TITRE DE LA PAGE ~~~~~~~~-->
-  <title>CV Julie</title>
+  <title>Julie's website</title>
 
 
 <!--~~~~~~~~ Lien Bootstrap ~~~~~~~~-->
@@ -15,6 +15,9 @@
 <!--~~~~~~~~ Inclusion pages CSS CV + FONTS  ~~~~~~~~-->
   <link rel="stylesheet" href="css/CV.css">
   <link rel="stylesheet" href="css/fonts.css">
+
+<!--~~~~~~~~ Inclusion pages CSS Medias pour RESPONSIVE  ~~~~~~~~-->
+  <link rel="stylesheet" href="css/medias.css">
 
 <!--~~~~~~~~ Lien logos Fontawesome ~~~~~~~~-->
 <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> -->
@@ -63,7 +66,7 @@
            <ul class="nav navbar-nav navbar-right">
              <li><a href="#">Home</a></li>
              <li><a href="#presentation">A propos de moi</a></li>
-             <li><a href="#bacground">Mes Réalisations</a></li>
+             <li><a href="#content-articles">Mes Réalisations</a></li>
              <li><a href="#footer">Follow Me</a></li>
              <li><a href="images/Julie.Perbal.CV.pdf" target="_blank">CV</a></li>
            </ul>
@@ -81,16 +84,32 @@
 
   <div id="photos" class="image" data-type="background" data-speed="2">
   </div>
+    <p id="display"></p>
 </section>
+    <!-- <script type="text/javascript">
+    var txt = 'Julie Perbal',
+                    display = document.getElementById('display');
+
+                    for(var i = 0, i = txt.length; i &1t; 1; i++){
+                        (function(i) {
+                            setTimeout(function() {
+                                display.innerHTML += txt.charAt(i);
+                            }, i * 10);
+                        }(i));
+                    }
+    </script> -->
 
   <!--**************************************-->
 
-         <!-- BANDEAU PRESENTATION -->
+         <!-- BANDEAU PRESENTATION
+
+             COMPETENCES ET REALISATIONS -->
 
   <!-- *************************************-->
 
 <div id="presentation" class="image" data-type="background" data-speed="7">
 
+  <div id="troispremiers">
     <div class="cercles" class="stuff" data-type="content"><a href="quijesuis.html" target="_blank">
       <div class="first"></div>
       <div class="text"><h2>Qui je suis?</h2></a></div>
@@ -103,35 +122,39 @@
 
     <div class="cercles" class="stuff" data-type="content"><a href="mailto:julie.perbal@gmail.com">
       <div class="third"></div>
-      <div class="text greyscale">
-        <h2>Contactez-moi</h2></a>
+      <div class="text greyscale"><h2>Contactez-moi</h2></a></div>
+    </div>
+  </div>
+
+      <div id="content-articles">
+
+            <div class="cercles" class="stuff" data-type="content"><a href="competences.html" target="_blank">
+              <div class="premier"></div>
+              <div class="text"><h2>Compétences</h2></a></div>
+            </div>
+
+            <div class="cercles" class="stuff" data-type="content"><a href="realisations.html" target="_blank">
+              <div class="deuxieme"></div>
+              <div class="text"><h2>Réalisations</h2></a></div>
+            </div>
+
+            <div class="cercles" class="stuff" data-type="content"><a href="hobbies.html" target="_blank">
+              <div class="troisieme"></div>
+              <div class="text"><h2>Hobbies</h2></a></div>
+            </div>
+
       </div>
 
-    </div>
 </div>
+
 
   <!--**************************************-->
 
-      <!-- COMPETENCES ET REALISATIONS -->
+      <!-- SECOND BANDEAU DE PHOTO -->
 
   <!-- *************************************-->
 <section id="bacground" class="image" data-type="background" data-speed="5">
 
-  <div id="content-articles">
-
-        <div>
-          <a href="competences.html" target="_blank"><h2>Compétences</h2></a>
-        </div>
-
-        <div>
-          <h2><a href="realisations.html" target="_blank">Réalisations</a></h2>
-        </div>
-
-        <div>
-          <h2 class="hobbies"><a href="hobbies.html" target="_blank">Hobbies</a></h2>
-        </div>
-
-  </div>
 </section>
 
   <!--**************************************-->

@@ -91,14 +91,14 @@ section {
 
 /******************* PRESENTATION ********************/
 #presentation{
-  padding-top: 20%;
+  padding-top: 15%;
   padding-left: 3%;
   background-color: white;
   padding-bottom: 0%;
   margin-bottom: 0%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 #presentation .cercles{
@@ -112,19 +112,20 @@ section {
 #presentation .first{
   border-radius: 50%;
   background-image: url('../images/moi.JPG');
+  filter: grayscale(100%);
   background-size: 170px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   height: 170px;
   width: 170px;
   /*padding-bottom: 5%;*/
 }
 #presentation .second{
   border-radius: 50%;
-  background-image: url('../images/road-street-sign-way.jpg');
+  background-image: url('../images/onewayoranother.png');
   filter: grayscale(100%);
   background-repeat: no-repeat;
-  background-size: 259px;
+  background-size: 255px;
   background-position: left;
   height: 170px;
   width: 170px;
@@ -134,11 +135,11 @@ section {
 }
 #presentation .third{
   border-radius: 80%;
-  background-image: url('../images/pexels-photo.jpg');
+  background-image: url('../images/cabine-telephonique.jpg');
   filter: grayscale(100%);
   background-repeat: no-repeat;
   background-size: 350px;
-  background-position: left;
+  background-position: center;
   height: 170px;
   width: 170px;
 	background-repeat: no-repeat;
@@ -159,7 +160,11 @@ section {
 #presentation .text{
   height: 50px;
   padding-top: 20%;
-  /*position: static;*/
+}
+#troispremiers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .animated {
 transition: width 700ms;
@@ -167,7 +172,6 @@ transition: width 700ms;
 .first:hover,
 .first:focus{
   transform: scale(1.2);
-  /*box-shadow: 0 0 65px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;*/
 }
 .second:hover,
 .second:focus{
@@ -177,7 +181,7 @@ transition: width 700ms;
 .third:focus{
   transform: scale(1.2);
 }
-#presentation .grayscale img
+/*#presentation .grayscale img
 {
         filter: grayscale(1);
         -webkit-filter: grayscale(1);
@@ -192,42 +196,81 @@ transition: width 700ms;
         -moz-filter: grayscale(0);
         -o-filter: grayscale(0);
         -ms-filter: grayscale(0);
-}
+}*/
 
 /*************** COMPETENCES ET REALISATIONS ************************/
-#bacground{
-  margin-top: 10%;
-  height: 800px;
-  background-image: url(../images/workspace.jpg); /*choix de l'image*/
-  background-size: 2600px 3000px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 #content-articles{
   justify-content: space-around;
   display: flex;
   margin: 0 auto;
-  width: 95%;
-  padding-top: 15%;
+  width: 100%;
+  padding-top: 5%;
 }
-#content-articles h2{
-  text-align: center;
-  margin-top: 30%;
+#content-articles .text h2{
+  margin-right: 20%;
+  padding-left: 5%;
 }
-
-#content-articles div{
-  height: 200px;
-  width: 200px;
+#content-articles .cercles{
+  height: 250px;
+  width: 250px;
+}
+#content-articles .cercles a{
+  text-decoration: none;
+}
+#content-articles .premier{
   border-radius: 50%;
-  background-color: #f8f8f8;
-  padding-top: 2%;
+  background-image: url('../images/softskills.jpg');
+  background-size: 170px;
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
 }
-#content-articles div:hover{
-  -moz-box-shadow: 5px 5px 5px 0px #cfcfcf;
-  -webkit-box-shadow: 5px 5px 5px 0px #cfcfcf;
-  -o-box-shadow: 5px 5px 5px 0px #cfcfcf;
-  box-shadow: 5px 5px 5px 0px #cfcfcf;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+#content-articles .premier:hover{
+  filter: none;
+}
+#content-articles .deuxieme{
+  border-radius: 50%;
+  background-image: url('../images/rea.gif');
+  background-size: 330px;
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+}
+#content-articles .deuxieme:hover{
+  filter: none;
+}
+#content-articles .troisieme{
+  border-radius: 50%;
+  background-image: url('../images/hobbies.jpg');
+  background-size: 260px;
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+}
+#content-articles .troisieme:hover{
+  filter: none;
+}
+.animated {
+transition: width 700ms;
+}
+.premier:hover,
+.premier:focus{
+  transform: scale(1.2);
+  /*box-shadow: 0 0 65px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 15px #b6a684;*/
+}
+.deuxieme:hover,
+.deuxieme:focus{
+  transform: scale(1.2);
+}
+.troisieme:hover,
+.troisieme:focus{
+  transform: scale(1.2);
 }
 div a{
   color: inherit;
@@ -236,6 +279,16 @@ div a{
 div a:hover{
   color: inherit;
   text-decoration: none;
+}
+
+/*************** SECOND BANDEAU DE PHOTOS ************************/
+#bacground{
+  margin-top: 10%;
+  height: 800px;
+  background-image: url(../images/workspace.jpg); /*choix de l'image*/
+  background-size: 2600px 3000px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /****************** BAS DE PAGE *********************/
 #footer{
@@ -670,6 +723,9 @@ time {
   #training{
     margin: 0 auto;
     width: 100%;
+    background: url("../images/abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   #container-training{
     margin: 0 auto;
@@ -685,6 +741,7 @@ time {
     font-family: 'a_little_sunshineregular';
     font-size: 35px;
     color: #8A2BE2;
+    padding-top: 5%;
   }
   #hobbies{
     display: flex;
@@ -711,7 +768,6 @@ time {
     height: 170px;
     width: 170px;
   }
-
   #hobbies .third{
     border-radius: 80%;
     background-image: url('../images/Fitness.jpg');
@@ -732,14 +788,14 @@ time {
     width: 170px;
   	background-repeat: no-repeat;
   }
-
   #hobbies .cercles h3{
     position:static;
     z-index: 100;
     font-family: 'rajdhaniregular';
   }
   #hobbies .text h3{
-    margin-right: 22%;
+    margin-top: 10%;
+    margin-right: 23%;
   }
   #hobbies .text{
     height: 50px;
