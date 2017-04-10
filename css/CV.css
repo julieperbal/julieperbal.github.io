@@ -660,61 +660,12 @@ time {
 
   /***************************************
 
-             PAGE REALISATIONS
+       PAGE REALISATIONS-PORTFOLIO
 
   <**************************************/
-  #rea{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: url("../images/fond.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #container-rea{
-    width: 90%;
-    margin: 0 auto;
-    /*padding-top: 7%;*/
-    padding-left: 6%;
-  }
-  #container-rea h1{
-    font-family: 'dk_lemon_yellow_sunregular';
-    font-size: 50px;
-    text-align: center;
-  }
-  #container-rea .rea{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 15%;
-    padding-top: 4%;
-  }
-  #container-rea a{
-    width: 30%
-  }
-  #container-rea img{
-    height: 80%;
-    width: 80%;
-  }
-  #container-rea img p{
-    overflow: hidden;
-  }
-  #container-rea p{
-    color:
-  }
-  #container-rea img:hover,
-  #container-rea img:focus {
-  	transform: scale(1.2);
-  	box-shadow: 0 0 65px white inset, 0 0 50px white inset, 0 0 50px;
-    /*filter: opacity(0.1);*/
-  }
-  #container-rea p:hover{
-    position: relative;
-    display: block;
-  }
+
+  /*CODE DANS LE FICHIER PORTOFOLIO.CSS */
+
   /***************************************
 
                PAGE HOBBIES

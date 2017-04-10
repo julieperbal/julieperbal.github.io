@@ -1,4 +1,4 @@
-@import "compass"
+/*@import "compass"*/
 
 $size: 424
 $nodes: 12
@@ -10,19 +10,19 @@ body{
   overflow: hidden
   background: black
 }
-  
-.base {
+
+.base{
   position: absolute
   top: 50%
   left: 50%
   width: $size + px
-  height: $size + px  
+  height: $size + px
   transform: translate(-50%, 0) rotate(180deg)
   transform-origin: 50% 0
 }
 
 .node,
-.child {
+.child{
   position: absolute
   top: 50%
   left: 50%
@@ -35,7 +35,7 @@ body{
 .child {
   transform-origin: 50% 50%
 }
-  
+
 .child:before,
 .child:after {
   content: ""
@@ -49,8 +49,8 @@ body{
   background: white
   border-radius: 50%
 }
-  
-.child:before{
+
+.child:before {
   transform: translate(-30px)
 }
 
@@ -59,47 +59,47 @@ body{
 }
 
 .node:nth-child(odd) .child {
-  animation-name: rF 
-  animation-duration: 2s 
-  animation-timing-function: ease 
+  animation-name: rF
+  animation-duration: 2s
+  animation-timing-function: ease
   animation-iteration-count: infinite
 }
-  
+
 .node:nth-child(even) .child {
-  animation-name: rB 
-  animation-duration: 2s 
-  animation-timing-function: ease 
+  animation-name: rB
+  animation-duration: 2s
+  animation-timing-function: ease
   animation-iteration-count: infinite
 }
-  
+
 $angle: 0
 $step: (2*pi()) / $nodes
 
-@for $i from 1 through $nodes
+@for $i from 1 through $nodes {
   .node:nth-child(#{$i}){
     transform: rotate(30 * $i - 30 + deg)
-}
-    
+  }
+  }
+
     .child {
       animation-delay: $i * (1 / $nodes) + s
-}
-    
-  @keyframes rF {
+    }
+
+  @keyframes rF{
     0%
       transform: rotate(0deg)
-  
+
+
     50%,
     100%
       transform: rotate(180deg)
 }
-  
   @keyframes rB {
     0%
       transform: rotate(0deg)
-  
+
     50%,
     100%
       transform: rotate(-180deg)
-} 
-    
+}
   $angle: $angle + $step
